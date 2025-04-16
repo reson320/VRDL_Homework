@@ -33,7 +33,7 @@ for fname in os.listdir(test_dir):
         "height": height
     })
 
-# ✅ 按照 id 升序排序
+# 按照 id 升序排序
 images = sorted(images, key=lambda x: x['id'])
 
 json_dict = {
@@ -44,4 +44,4 @@ json_dict = {
 with open(output_json, 'w') as f:
     json.dump(json_dict, f, indent=4)
 
-print(f"✅ test.json generated with {len(images)} images. Sorted by id.")
+print(f"test.json generated with {len(images)} images. Sorted by id.")
